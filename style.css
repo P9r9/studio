@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Lato:wght@400;700&family=Poppins:wght@400;500&family=Roboto+Mono:wght@400;600;700&family=Sigmar&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    height: 90vh;
+    width: 100%;
+    
+     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/professional-indian-young-photographer-taking-photos-studio-with-leight_231208-3780.avif);
+   
+
+}
+.main-text{
+  
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Bruno";
+    padding-top: 27%;
+    padding-left: 51%;
+    color: aliceblue;
+    font-weight: bold;
+    letter-spacing: 4px;
+   
+ 
+}
+
+#section-2{
+    margin: 30px;
+    
+}
+
+#section-2 h3{
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    font-family: "Roboto+Mono:";
+}
+
+.second-container{
+    width: 100%;
+   height: auto;
+    
+    display: grid;
+  grid-template-columns: auto auto  ;
+}
+
+.container {
+    position: relative;
+    padding: 20px;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  @media (max-width:400px) {
+
+    .main-container{
+        
+        width: 100%;
+        height: auto;
+        background-image: url(images/professional-indian-young-photographer-taking-photos-studio-with-leight_231208-3780.avif);
+    }
+    .main-text{
+        padding-top: 283px;
+    }
+    .navbar-collapse{
+        text-align: center;
+    }
+   
+    .second-container{
+        width: 100%;
+ margin-left: 3px;
+        
+        display: grid;
+      grid-template-columns: auto ;
+    }
+    #section-2 {
+      
+        height: auto;
+       
+    }
+
+    
+    
+    
+  }
+
+  /* code */
+
+  .about-container{
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    justify-content: center;
+  
+    background-color: #d9dfde;
+    
+  }
+  .about-text {
+    width: 45%;
+    height: 50vh;
+    
+    padding: 10px;
+    margin-top: 40px;
+}
+
+
+  .imagetext{
+    width: 45%;
+    height: 50vh;
+    margin-top: 20px;
+    
+   
+   
+    
+  }
+
+  .imagetext img{
+    width: 100%;
+    height: 50vh;
+
+  }
+
+  @media (max-width:400px){
+
+    .about-container{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+       
+      margin-top: 30px;
+        background-color: #d9dfde;
+       
+      }
+
+      .about-text{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        
+      }
+      .imagetext{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+       
+       
+       
+        
+      }
+    
+      .imagetext img {
+        width: 100%;
+       
+     /* margin-top: 30px;  */
+        padding-right: 100px;
+    }
+
+      
+  }
+
+
+  /* code */
+
+
+  .last-container{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(225, 224, 224);
+    margin-top: 20px;
+  }
+
+  .address{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  .contact{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    
+  }
+  .contact input,p{
+    margin: 10px;
+  }
+  .map{
+    width: 30%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+.icons{
+    margin-left: 20px;
+}
+
+/* code */
+
+@media (max-width:400px){
+
+    .last-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .address{
+        display: flex;
+        width: 100%;
+    }
+    .contact{
+        width: 100%;
+    }
+    .map{
+        display: flex;
+        width: 100%;
+    }
+}
+
+.bx:hover{
+    color:aliceblue;
+    cursor: pointer;
+}
